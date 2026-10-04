@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draw a digit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Draw a digit</h1>
+    <p class="intro">
+      Draw a number from 0 to 9. A neural network written from scratch reads
+      it as you draw. Nothing is sent anywhere, it all runs in this page.
+    </p>
+
+    <div class="layout">
+      <div class="pad">
+        <canvas id="pad" width="280" height="280" aria-label="Drawing area"></canvas>
+        <button id="clear" type="button">Clear</button>
+      </div>
+
+      <div class="output">
+        <div class="guess">
+          <span id="digit">?</span>
+          <span id="confidence">draw something</span>
+        </div>
+
+        <div id="bars" aria-label="Probability of each digit"></div>
+
+        <div class="seen">
+          <canvas id="seen" width="28" height="28"></canvas>
+          <span>What the network sees: your drawing scaled to 20 pixels and centred in a 28 x 28 image.</span>
+        </div>
+      </div>
+    </div>
+
+    <p id="status" class="status">Loading the network...</p>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
