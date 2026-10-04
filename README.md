@@ -2,6 +2,8 @@
 
 Draw a number in the browser and a neural network reads it while you draw.
 
+**Try it: https://imu-002.github.io/draw-a-digit/** (works on a phone)
+
 ![Screenshot](docs/screenshot.png)
 
 The network is the one from [mnist-from-scratch](https://github.com/imu-002/mnist-from-scratch), which was trained with NumPy and no machine learning library. This project runs it in the browser, again with no library: the forward pass is about 40 lines of JavaScript in [`network.js`](network.js). Nothing is sent to a server.
