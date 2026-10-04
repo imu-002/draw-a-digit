@@ -1,0 +1,1 @@
+{"layers": [{"inputs": 784, "outputs": 128}, {"inputs": 128, "outputs": 64}, {"inputs": 64, "outputs": 10}]}
